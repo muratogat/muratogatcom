@@ -618,6 +618,11 @@ a.edu-card {
   color: var(--text-light);
 }
 
+/* --- Mobile-only line break --- */
+.mobile-break {
+  display: none;
+}
+
 /* --- Scroll Reveal --- */
 .reveal {
   opacity: 0;
@@ -670,15 +675,13 @@ a.edu-card {
     width: 100%;
   }
 
+  .mobile-break {
+    display: block;
+  }
+
   .education__grid {
     grid-template-columns: 1fr;
     gap: 32px;
-  }
-
-  .edu-card__visual {
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
